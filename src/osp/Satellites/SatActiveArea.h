@@ -27,6 +27,7 @@
 #include "../Universe.h"
 
 #include <map>
+#include <string>
 
 #include "../types.h"
 #include "../Active/activetypes.h"

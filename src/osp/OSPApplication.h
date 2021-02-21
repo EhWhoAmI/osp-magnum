@@ -25,6 +25,8 @@
 #pragma once
 
 #include <map>
+#include <string>
+
 #include "Universe.h"
 #include "Resource/Package.h"
 

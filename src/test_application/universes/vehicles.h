@@ -27,6 +27,7 @@
 
 #include <osp/Universe.h>
 #include <osp/Resource/Package.h>
+#include <string>
 #include <string_view>
 
 namespace testapp

@@ -30,6 +30,7 @@
 #include <entt/entity/registry.hpp>
 
 #include <cstdint>
+#include <string>
 #include <tuple>
 #include <vector>
 
