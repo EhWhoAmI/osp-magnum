@@ -20,3 +20,14 @@ jobs:
 
     - name: Build OSP-Magnum
       run: mkdir build && cd build && cmake ..
+
+    - name: Prepare Artifact
+      run: |
+        mv build/3rdparty/newton-dynamics/lib/ build/lib
+        
+    - uses: actions/upload-artifact@v2
+      with: 
+        name: release
+        path: |
+          build/bin
+          build/lib
