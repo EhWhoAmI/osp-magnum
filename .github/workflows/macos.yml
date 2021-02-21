@@ -8,11 +8,13 @@ on:
 
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: [macos-latest]
 
     steps:
     - uses: actions/checkout@v2
-
+      with:
+        fetch-depth: 1
+        submodules: recursive
     - name: Install dependencies
       run: brew install re2c p7zip cmake sdl2
 
