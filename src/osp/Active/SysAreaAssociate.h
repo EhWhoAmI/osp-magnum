@@ -30,6 +30,7 @@
 #include "../Satellites/SatActiveArea.h"
 
 #include <cstdint>
+#include <unordered_map>
 
 namespace osp::active
 {

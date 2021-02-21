@@ -36,6 +36,8 @@
 #include <Magnum/Shaders/MeshVisualizer.h>
 #include <Magnum/GL/Mesh.h>
 
+#include <unordered_map>
+
 
 namespace planeta::active
 {
