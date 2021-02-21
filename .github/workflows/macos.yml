@@ -19,7 +19,7 @@ jobs:
       run: brew install re2c p7zip cmake sdl2
 
     - name: Build OSP-Magnum
-      run: mkdir build && cd build && cmake .. && cmake --build build --parallel --config Release --target osp-magnum
+      run: mkdir build && cd build && cmake .. && cmake --build . --parallel --config Release --target osp-magnum
 
     - name: Prepare Artifact
       run: |
