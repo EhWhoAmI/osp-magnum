@@ -1,0 +1,22 @@
+name: macOS
+
+on:
+  pull_request:
+  push:
+  release:
+    types: published
+
+jobs:
+  build:
+    runs-on: macos-11.0
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: brew install re2c p7zip cmake sdl2
+
+    - name: Build OSP-Magnum
+      run: mkdir build && cd build && cmake ..
+
+    - name: Prepare Artifact
