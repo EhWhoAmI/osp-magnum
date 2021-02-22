@@ -23,7 +23,7 @@ jobs:
         mkdir build
         cd build
         cmake ..
-        cmake --build build
+        cmake --build .
 
     - name: Prepare Artifact
       run: |
