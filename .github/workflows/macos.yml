@@ -22,7 +22,8 @@ jobs:
       run: |
         mkdir build
         cd build
-        cmake .. && cmake --build bin
+        cmake ..
+        cmake --build build
 
     - name: Prepare Artifact
       run: |
