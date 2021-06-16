@@ -278,15 +278,15 @@ void SysPlanetA::update_geometry(ActiveScene& rScene)
 
             rPlanetGeo.updates_clear();
 
-            using Magnum::Shaders::MeshVisualizer3D;
+            using Magnum::Shaders::MeshVisualizerGL3D;
             using Magnum::GL::MeshPrimitive;
             using Magnum::GL::MeshIndexType;
 
             planet.m_mesh
                 .setPrimitive(MeshPrimitive::Triangles)
                 .addVertexBuffer(planet.m_vrtxBufGL, 0,
-                                 MeshVisualizer3D::Position{},
-                                 MeshVisualizer3D::Normal{})
+                                 MeshVisualizerGL3D::Position{},
+                                 MeshVisualizerGL3D::Normal{})
                 .setIndexBuffer(planet.m_indxBufGL, 0,
                                 MeshIndexType::UnsignedInt)
                 .setCount(rPlanetGeo.calc_index_count());

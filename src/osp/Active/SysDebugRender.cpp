@@ -47,7 +47,7 @@ void SysDebugRender::add_functions(ActiveScene &rScene)
     using namespace adera::shader;
 
     glResources.add<Phong>("phong_shader",
-        Phong{Magnum::Shaders::Phong::Flag::DiffuseTexture});
+        Phong{Magnum::Shaders::PhongGL::Flag::DiffuseTexture});
 
     glResources.add<PlumeShader>("plume_shader");
 

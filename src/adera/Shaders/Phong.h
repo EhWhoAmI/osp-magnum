@@ -25,7 +25,7 @@
 #pragma once
 
 #include <vector>
-#include <Magnum/Shaders/Phong.h>
+#include <Magnum/Shaders/PhongGL.h>
 #include <Magnum/GL/Mesh.h>
 #include <Magnum/GL/Texture.h>
 #include <Magnum/Math/Color.h>
@@ -37,10 +37,10 @@ namespace adera::shader
 {
 
 
-class Phong : protected Magnum::Shaders::Phong
+class Phong : protected Magnum::Shaders::PhongGL
 {
 public:
-    using Magnum::Shaders::Phong::Phong;
+    using Magnum::Shaders::PhongGL::PhongGL;
 
     struct ACompPhongInstance
     {

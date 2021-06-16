@@ -33,7 +33,7 @@
 
 #include <osp/UserInputHandler.h>
 
-#include <Magnum/Shaders/MeshVisualizer.h>
+#include <Magnum/Shaders/MeshVisualizerGL.h>
 #include <Magnum/GL/Mesh.h>
 
 
@@ -45,9 +45,9 @@ struct ACompPlanet
     std::shared_ptr<IcoSphereTree> m_icoTree;
     std::shared_ptr<PlanetGeometryA> m_planet;
     Magnum::GL::Mesh m_mesh{};
-    Magnum::Shaders::MeshVisualizer3D m_shader{
-            Magnum::Shaders::MeshVisualizer3D::Flag::Wireframe
-            | Magnum::Shaders::MeshVisualizer3D::Flag::NormalDirection};
+    Magnum::Shaders::MeshVisualizerGL3D m_shader{
+            Magnum::Shaders::MeshVisualizerGL3D::Flag::Wireframe
+            | Magnum::Shaders::MeshVisualizerGL3D::Flag::NormalDirection};
     Magnum::GL::Buffer m_vrtxBufGL{};
     Magnum::GL::Buffer m_indxBufGL{};
     double m_radius;
